@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts/')
     const data = await response.json();
 
